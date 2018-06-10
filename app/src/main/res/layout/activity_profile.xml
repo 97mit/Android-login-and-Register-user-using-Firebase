@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="94dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textViewEmailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/email_id"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileName"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileName" />
+
+    <EditText
+        android:id="@+id/editTextProfileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfilePhone"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfilePhone"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfilePhone"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfileView" />
+
+    <EditText
+        android:id="@+id/editTextProfilePhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextProfileDOB"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProfileDOB"
+        app:layout_constraintStart_toStartOf="@+id/editTextProfileDOB"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileName" />
+
+    <EditText
+        android:id="@+id/editTextProfileDOB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:ems="10"
+        android:hint="DOB"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSaveProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfilePhone" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/save_profileButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProfileDOB"
+        tools:text="Save Profile" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileView">
+
+    <ImageView
+        android:id="@+id/imageProfileView"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="94dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textProfileViewName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textViewEmailProfileView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/email_id"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textProfileViewName"
+        app:layout_constraintStart_toStartOf="@+id/textProfileViewName" />
+
+    <TextView
+        android:id="@+id/textProfileViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/nameView"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textProfileViewPhone"
+        app:layout_constraintEnd_toEndOf="@+id/textProfileViewPhone"
+        app:layout_constraintStart_toStartOf="@+id/textProfileViewPhone"
+        app:layout_constraintTop_toBottomOf="@+id/imageProfileView" />
+
+    <TextView
+        android:id="@+id/textProfileViewPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="@string/phoneView"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textProfileViewDOB"
+        app:layout_constraintEnd_toEndOf="@+id/textProfileViewDOB"
+        app:layout_constraintStart_toStartOf="@+id/textProfileViewDOB"
+        app:layout_constraintTop_toBottomOf="@+id/textProfileViewName" />
+
+    <TextView
+        android:id="@+id/textProfileViewDOB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginStart="46dp"
+        android:ems="10"
+        android:text="@string/birth_dateView"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProfileViewPhone" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="@string/edit_profileButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProfileViewDOB"
+        />
+
+</android.support.constraint.ConstraintLayout>

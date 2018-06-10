@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "142691892675",
+    "firebase_url": "https://racipes-3b462.firebaseio.com",
+    "project_id": "racipes-3b462",
+    "storage_bucket": "racipes-3b462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142691892675:android:2c767394ac8cbc98",
+        "android_client_info": {
+          "package_name": "com.amit.firebaseLogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142691892675-3vp55gg7esje511aqtatd11eg63b2uqu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "142691892675-3vp55gg7esje511aqtatd11eg63b2uqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXmvG0LBFazc8EOg9JaulFg3YO5-bP0O4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
